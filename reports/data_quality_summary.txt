@@ -5,3 +5,8 @@ Data Quality Summary
 3. Identified missing values in each dataset.
 4. Checked duplicate records.
 5. No file loading errors found.
+6. Fund Master dataset contains valid AMFI scheme codes.
+7. All AMFI codes are available in NAV History dataset.
+8. Live NAV data was successfully fetched from MFAPI.
+9. Live NAV history for six schemes was downloaded and stored as CSV files.
+10. Overall data quality is satisfactory for further analysis.
