@@ -82,5 +82,48 @@ perf.to_csv(
     "data/processed/cleaned_scheme_performance.csv",
     index=False
 )
+# Other files save to processed folder
+
+fund_master = pd.read_csv("data/raw/01_fund_master.csv")
+fund_master.to_csv(
+    "data/processed/cleaned_fund_master.csv",
+    index=False
+)
+
+aum = pd.read_csv("data/raw/03_aum_by_fund_house.csv")
+aum.to_csv(
+    "data/processed/cleaned_aum_by_fund_house.csv",
+    index=False
+)
+
+sip = pd.read_csv("data/raw/04_monthly_sip_inflows.csv")
+sip.to_csv(
+    "data/processed/cleaned_monthly_sip_inflows.csv",
+    index=False
+)
+
+category = pd.read_csv("data/raw/05_category_inflows.csv")
+category.to_csv(
+    "data/processed/cleaned_category_inflows.csv",
+    index=False
+)
+
+folio = pd.read_csv("data/raw/06_industry_folio_count.csv")
+folio.to_csv(
+    "data/processed/cleaned_industry_folio_count.csv",
+    index=False
+)
+
+holdings = pd.read_csv("data/raw/09_portfolio_holdings.csv")
+holdings.to_csv(
+    "data/processed/cleaned_portfolio_holdings.csv",
+    index=False
+)
+
+benchmark = pd.read_csv("data/raw/10_benchmark_indices.csv")
+benchmark.to_csv(
+    "data/processed/cleaned_benchmark_indices.csv",
+    index=False
+)
 
 print("Done")
